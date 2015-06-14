@@ -22,13 +22,7 @@
 		function loadHomePage() {
 			removeAllActives();
 			$("#conteudo").load("home.html");
-			$("#cont-item").addClass("active");
-		}
-
-		function loadDescricao() {
-			removeAllActives();
-			$("#conteudo").load("description.html");
-			$("#desc-item").addClass("active");
+			$("#home-item").addClass("active");
 		}
 
 		function loadDepoimentos() {
@@ -63,7 +57,6 @@
 
 		var removeAllActives = function () {
 			$("#home-item").removeClass("active");
-			$("#desc-item").removeClass("active");
 			$("#depo-item").removeClass("active");
 			$("#prom-item").removeClass("active");
 			$("#cont-item").removeClass("active");
@@ -107,7 +100,6 @@
 		<a href="#skip-menu" class="hidden">Menu</a>
 		<ul id="menu">
 			<li class="first"><a id="home-item" href="#" onclick="loadHomePage()">Home</a></li>
-			<li><a id="desc-item" href="#" onclick="loadDescricao()">Descrição</a></li>
 			<li><a id="depo-item" href="#" onclick="loadDepoimentos()">Depoimentos</a></li>
 			<li><a id="prom-item" href="#" onclick="loadPromocoes()">Promoções</a></li>
 			<li><a id="post-item" href="#" onclick="loadPostos()">Postos</a></li>
