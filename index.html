@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+
+	<meta name="Description" content="Gerenciamento de vale combustivel" />
+	<meta name="Keywords" content="cartao, vale, combustivel" />
+	<meta name="robots" content="all,follow" />
+	<meta name="author" content="Vitor Arins" />
+
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Javascript -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script>
+		$(function(){
+			$("#conteudo").load("home.html");
+			$("#home-item").addClass("active");
+		});
+
+		function loadHomePage() {
+			removeAllActives();
+			$("#conteudo").load("home.html");
+			$("#cont-item").addClass("active");
+		}
+
+		function loadDescricao() {
+			removeAllActives();
+			$("#conteudo").load("description.html");
+			$("#desc-item").addClass("active");
+		}
+
+		function loadDepoimentos() {
+			removeAllActives();
+			$("#conteudo").load("depoimentos.html");
+			$("#depo-item").addClass("active");
+		}
+
+		function loadPromocoes() {
+			removeAllActives();
+			$("#conteudo").load("promotions.html");
+			$("#prom-item").addClass("active");
+		}
+
+		function loadContato() {
+			removeAllActives();
+			$("#conteudo").load("contact.html");
+			$("#cont-item").addClass("active");
+		}
+
+		function loadPostos() {
+			removeAllActives();
+			$("#conteudo").load("blank.html");
+			$("#post-item").addClass("active");
+		}
+
+		function loadLocalizacao() {
+			removeAllActives();
+			$("#conteudo").load("blank.html");
+			$("#loca-item").addClass("active");
+		}
+
+		var removeAllActives = function () {
+			$("#home-item").removeClass("active");
+			$("#desc-item").removeClass("active");
+			$("#depo-item").removeClass("active");
+			$("#prom-item").removeClass("active");
+			$("#cont-item").removeClass("active");
+			$("#post-item").removeClass("active");
+			$("#loca-item").removeClass("active");
+		};
+
+	</script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="css/depoimentos.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/promotions.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/contact.css" type="text/css" media="screen, projection, tv" />
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<title>Vale Combustível | Homepage</title>
+</head>
+
+<body>
+<div id="main">
+
+	<!-- Header -->
+	<div id="header">
+		<div id="header-in">
+			<ul id="navigation">
+				<li id="house"><a href="#">Homepage</a>|</li>
+				<li id="envelope"><a href="#">Contato</a></li>
+			</ul>
+
+			<h1><a href="#">Vale Combustível</a></h1>
+
+			<h2>Gerenciando o combustível de seus funcionários&hellip;</h2>
+
+		</div>
+	</div>
+
+	<div id="menu-box" class="cleaning-box">
+		<a href="#skip-menu" class="hidden">Menu</a>
+		<ul id="menu">
+			<li class="first"><a id="home-item" href="#" onclick="loadHomePage()">Home</a></li>
+			<li><a id="desc-item" href="#" onclick="loadDescricao()">Descrição</a></li>
+			<li><a id="depo-item" href="#" onclick="loadDepoimentos()">Depoimentos</a></li>
+			<li><a id="prom-item" href="#" onclick="loadPromocoes()">Promoções</a></li>
+			<li><a id="post-item" href="#" onclick="loadPostos()">Postos</a></li>
+			<li><a id="loca-item" href="#" onclick="loadLocalizacao()">Localização</a></li>
+			<li><a id="cont-item" href="#" onclick="loadContato()">Contato</a></li>
+		</ul>
+	</div>
+
+	<div id="skip-menu"></div>
+
+	<div id="content">
+
+		<div id="content-box">
+
+			<div id="content-box-in-left">
+				<div id="content-box-in-left-in">
+
+					<div id="conteudo"></div>
+				</div>
+
+			</div>
+
+			<div id="content-box-in-right">
+				<div id="content-box-in-right-in">
+					<h3>Notícias</h3>
+					<dl>
+						<dt>Março 2015</dt>
+						<dd>Início do aprendizado.</dd>
+
+						<dt>Abril 2015</dt>
+						<dd>Aprendizado sobre servidores.</dd>
+
+						<dt>Maio 2015</dt>
+						<dd>Aprendizado sobre o Backend.</dd>
+
+						<dt>Junho 2015</dt>
+						<dd>Aprendizado sobre o Frontend.</dd>
+					</dl>
+					<h3>Informação para contato</h3>
+					<address>
+						<strong>Cartão VC</strong><br />
+						Rua dos postos, 1345<br />
+						Florianópolis<br />
+						Fone: +55 (48) 3029 9999<br />
+						Fax: +55 (48) 3029 9998<br />
+						E-mail: info&#64;<!---->cartaovc.com.br
+					</address>
+				</div>
+			</div>
+			<div class="cleaner">&nbsp;</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="footer-in">
+			<p class="footer-left">&copy; <a href="#">Cartão VC</a>, 2015.</p>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
