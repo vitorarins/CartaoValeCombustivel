@@ -12,7 +12,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Javascript -->
-	<script type="application/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://underscorejs.org/underscore.js"></script>
+	<script src="http://backbonejs.org/backbone.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
 	<script type="application/javascript">
 		$(function(){
 			$("#conteudo").load("home.html");
@@ -45,13 +50,13 @@
 
 		function loadPostos() {
 			removeAllActives();
-			$("#conteudo").load("blank.html");
+			$("#conteudo").load("postos.html");
 			$("#post-item").addClass("active");
 		}
 
 		function loadLocalizacao() {
 			removeAllActives();
-			$("#conteudo").load("blank.html");
+			$("#conteudo").load("mapa.html");
 			$("#loca-item").addClass("active");
 		}
 
@@ -72,10 +77,13 @@
 	<link rel="stylesheet" href="css/depoimentos.css" type="text/css" media="screen, projection, tv" />
 	<link rel="stylesheet" href="css/promotions.css" type="text/css" media="screen, projection, tv" />
 	<link rel="stylesheet" href="css/contact.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/postos.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/libs/bootstrap-theme.min.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css" type="text/css" media="screen, projection, tv" />
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-	<title>Vale Combustível | Homepage</title>
+	<title>Vale Combustível</title>
 </head>
 
 <body>
@@ -90,8 +98,7 @@
 			</ul>
 
 			<h1><a href="#">Vale Combustível</a></h1>
-
-			<h2>Gerenciando o combustível de seus funcionários&hellip;</h2>
+			<h2 class="slogan">Gerenciando o combustível de seus funcionários&hellip;</h2>
 
 		</div>
 	</div>

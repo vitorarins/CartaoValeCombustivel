@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map_canvas {
+            width: 510px;
+            height: 500px;
+        }
+    </style>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/jquery-2.1.4.js"></script>-->
+    <!--<script src="http://underscorejs.org/underscore.js"></script>-->
+    <!--<script src="http://backbonejs.org/backbone.js"></script>-->
+</head>
+<body>
+    <h2>Mapa da rede de postos</h2>
+    <div id="postosapp">
+        <section id="main">
+            <div id="map_canvas"></div>
+        </section>
+    </div>
+
+    <script src="js/mapapostos.js"></script>
+    <!-- Templates -->
+
+    <script type="text/template" id="posto-template">
+        <a href="#">
+            <h4><%- nome %></h4>
+            <p><%- endereco %></p>
+        </a>
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#main {
+    display: block;
+}
+
+#postos-list {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#postos-list li {
+    padding: 18px 20px 18px 0;
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#postos-list li:last-child {
+    border-bottom: none;
+}
+
+#postos-list li .view label {
+    word-break: normal;
+}

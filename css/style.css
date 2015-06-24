@@ -106,6 +106,15 @@ h2 {
     margin: 3px 0 0 2px;
 }
 
+.slogan {
+    font-size: 1.4em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0 0 0 2px;
+}
+
 h3 {
     font-size: 1.4em;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -181,57 +190,11 @@ li#house a {
     margin-right: 16px;
 }
 
-li#sitemap {
-    background: url('../img/sitemap.gif') no-repeat 0 2px;
-    padding-left: 24px;
-    margin-left: 16px;
-}
-
-li#sitemap a {
-    margin-right: 16px;
-}
-
 li#envelope {
     background: url('../img/envelope.gif') no-repeat 0 2px;
     padding-left: 23px;
     margin-left: 16px;
 }
-
-
-/* Search form */
-
-/*form.searching {*/
-/*width: 210px;*/
-/*position: absolute;*/
-/*top: 47px;*/
-/*right: 0;*/
-/*}*/
-
-/*form.searching fieldset {*/
-/*border: 0;*/
-/*}*/
-
-/*form.searching input.search {*/
-/*letter-spacing: 1px;*/
-/*float: left;*/
-/*padding: 2px 0 2px 6px;*/
-/*width: 139px;*/
-/*border: 1px solid gray;*/
-/*}*/
-
-/*form.searching input.hledat {*/
-/*letter-spacing: 1px;*/
-/*padding-left: 0;*/
-/*margin-left: 4px;*/
-/*font-weight: bold;*/
-/*color: #FFFFFF;*/
-/*float: left;*/
-/*}*/
-
-/*form.searching label {*/
-/*display: none;*/
-/*}*/
-
 
 /* Menu */
 
